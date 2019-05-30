@@ -1,18 +1,25 @@
 # vlc-control
 
 #Usuage example
-
+```
 #! /usr/bin/python
+
 from player import Player
+
 from filter import Filter
 
 player = Player()
+
 player.setup_crondbus();
 
 try:
+
     player.get_dbus_interface()
+    
 except :
+
     player.launch()
+
 
 player.get_dbus_interface(True);
 
@@ -29,9 +36,9 @@ player.shuffle()
 player.next()
 
 
-
+```
 Supported methods:
-
+```
 launch
 
 play(path, filter)
@@ -63,6 +70,6 @@ shuffle()
 noshuffle()
 
 close()
-
+```
 
 Say thanks to https://github.com/amol9/vlc-ctrl

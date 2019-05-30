@@ -21,26 +21,48 @@ path = "/mnt/Software/Music/Thich_nghe"
 filter = Filter(random=False)
 
 player.clear()
-player.play(path, filter);
-player.shuffle();
+
+player.play(path, filter)
+
+player.shuffle()
+
 player.next()
+
 
 
 Supported methods:
 
 launch
+
 play(path, filter)
+
 clear()
+
 add(path, filter)
+
 pause()
+
 toggle()
+
 prev()
+
 next()
+
 get_volume()
+
 set_volume()
+
 fade_volume(target, time)
+
 track_info()
+
 stop()
+
 shuffle()
+
 noshuffle()
+
 close()
+
+
+Say thanks to https://github.com/amol9/vlc-ctrl
